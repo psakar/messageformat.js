@@ -115,7 +115,7 @@
       while ( ! MessageFormat.locale.hasOwnProperty( locale ) ) {
         locale = locale.substring(0, locale.lastIndexOf( tagSeparator ));
         if (locale.length === 0) {
-          return null;
+          return 'en';
         }
       }
 
